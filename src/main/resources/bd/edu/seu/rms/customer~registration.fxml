@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fffaf0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.rms.controllers.CustomerRegistrationController">
+   <children>
+      <ImageView fitHeight="618.0" fitWidth="439.0" layoutX="379.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Binty_Project_Image/miami-bayside-landscape.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <AnchorPane layoutX="43.0" layoutY="93.0" prefHeight="468.0" prefWidth="292.0" style="-fx-background-color: rgba(245,245,220,0.3); -fx-background-radius: 10; -fx-border-color: #800808; -fx-border-radius: 10;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="14.0" prefHeight="27.0" prefWidth="186.0" text="Create a new account" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fullNameField" layoutX="31.0" layoutY="53.0" prefHeight="37.0" prefWidth="205.0" promptText="Full Name" style="-fx-border-color: #000000;" />
+            <TextField fx:id="usernameField" layoutX="31.0" layoutY="102.0" prefHeight="37.0" prefWidth="205.0" promptText="Username" style="-fx-border-color: #000000;" />
+            <TextField fx:id="phnNumberField" layoutX="31.0" layoutY="151.0" prefHeight="37.0" prefWidth="205.0" promptText="Phone number" style="-fx-border-color: #000000;" />
+            <TextArea fx:id="addressArea" layoutX="31.0" layoutY="201.0" prefHeight="37.0" prefWidth="205.0" promptText="Address" style="-fx-border-color: #000000;" />
+            <Label fx:id="confirmPasswordError" layoutX="31.0" layoutY="367.0" textFill="RED">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Button layoutX="53.0" layoutY="399.0" mnemonicParsing="false" onAction="#registerEvent" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #000000;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="57.0" layoutY="431.0" text="Already have an account?" />
+            <Label layoutX="199.0" layoutY="431.0" onMouseClicked="#goToCustomerLoginEvent" text="Login" textFill="#2a55b9">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField" layoutX="31.0" layoutY="282.0" prefHeight="37.0" prefWidth="205.0" promptText="Password" style="-fx-border-color: #000000;" />
+            <PasswordField fx:id="confirmPasswordField" layoutX="31.0" layoutY="338.0" prefHeight="37.0" prefWidth="205.0" promptText="Confirm Password" style="-fx-border-color: #000000;" />
+            <RadioButton layoutX="33.0" layoutY="251.0" mnemonicParsing="false" selected="true" text="Male">
+               <toggleGroup>
+                  <ToggleGroup fx:id="genderGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="95.0" layoutY="251.0" mnemonicParsing="false" text="Female" toggleGroup="$genderGroup" />
+            <RadioButton layoutX="177.0" layoutY="251.0" mnemonicParsing="false" text="Others" toggleGroup="$genderGroup" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

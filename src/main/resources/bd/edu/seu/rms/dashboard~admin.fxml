@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.rms.controllers.DashboardAdminController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="170.0" style="-fx-background-color: #4a4a7a; -fx-border-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="630.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="14.0" prefHeight="17.0" prefWidth="93.0" style="-fx-effect: dropshadow(gaussian, #ffcc00, 20, 0.3, 0, 0);" text="Welcome" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="41.0" prefHeight="27.0" prefWidth="93.0" style="-fx-effect: dropshadow(gaussian, #ffcc00, 20, 0.3, 0, 0);" text="Admin " textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="202.0" mnemonicParsing="false" onAction="#manageEmployeeEvent" prefHeight="30.0" prefWidth="135.0" text="        Employees" textAlignment="CENTER" textFill="#030303">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="31.0" layoutY="205.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/new-employee.png" />
+               </image>
+            </ImageView>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="243.0" mnemonicParsing="false" onAction="#goToRevenueDashboard" prefHeight="30.0" prefWidth="135.0" text="       Revenue" textAlignment="CENTER" AnchorPane.topAnchor="243.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="33.0" layoutY="246.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/circle.png" />
+               </image>
+            </ImageView>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="285.0" mnemonicParsing="false" onAction="#goToFoodMenu" prefHeight="19.0" prefWidth="135.0" text="      Menu" textAlignment="CENTER" AnchorPane.topAnchor="285.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="31.0" layoutY="288.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/book.png" />
+               </image>
+            </ImageView>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="334.0" mnemonicParsing="false" onAction="#goToOrderList" prefHeight="30.0" prefWidth="135.0" text="     Orders" textAlignment="CENTER" AnchorPane.topAnchor="330.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="31.0" layoutY="334.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/delivery-man.png" />
+               </image>
+            </ImageView>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="376.0" mnemonicParsing="false" onAction="#goToSeeReview" prefHeight="30.0" prefWidth="135.0" text="     Review" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="31.0" layoutY="379.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/smiley.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="loginAdminName" layoutX="6.0" layoutY="79.0" prefHeight="31.0" prefWidth="153.0" style="-fx-effect: dropshadow(gaussian, #ffcc00, 20, 0.3, 0, 0);" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="170.0" prefHeight="30.0" prefWidth="630.0" style="-fx-border-color: #000000;">
+         <children>
+            <ImageView fitHeight="19.0" fitWidth="25.0" layoutX="567.0" layoutY="7.0" onMouseClicked="#goToCustomerList" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/businessman.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="25.0" layoutX="536.0" layoutY="7.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/gift.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="25.0" layoutX="502.0" layoutY="7.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/bell.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="25.0" layoutX="465.0" layoutY="7.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/email.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="31.0" layoutX="592.0" layoutY="7.0" onMouseClicked="#handleLogoutClick" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/logout.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="7.0" layoutY="2.0" prefHeight="25.0" prefWidth="441.0" promptText="Search here" style="-fx-border-radius: 60; -fx-border-color: #000000;" />
+            <ImageView fitHeight="13.0" fitWidth="25.0" layoutX="409.0" layoutY="10.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/search.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="181.0" layoutY="31.0" prefHeight="98.0" prefWidth="118.0" style="-fx-background-color: #e6e6fa; -fx-border-color: #000000;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/employees.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="45.0" layoutY="49.0" prefHeight="19.0" prefWidth="68.0" text="Employees">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="311.0" layoutY="31.0" prefHeight="98.0" prefWidth="124.0" style="-fx-background-color: #e9967a; -fx-border-color: #000000;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="20.0" layoutY="18.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/growth.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="51.0" layoutY="49.0" text="Revenue">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="447.0" layoutY="31.0" prefHeight="98.0" prefWidth="112.0" style="-fx-background-color: #fff0f5; -fx-border-color: #000000;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/app.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="59.0" layoutY="49.0" text="Menu">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="571.0" layoutY="31.0" prefHeight="98.0" prefWidth="112.0" style="-fx-background-color: #cd5c5c; -fx-border-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="13.0" layoutY="20.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/food.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="59.0" layoutY="51.0" text="Orders" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="695.0" layoutY="31.0" prefHeight="98.0" prefWidth="106.0" style="-fx-background-color: #fffff0; -fx-border-color: #000000;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="8.0" layoutY="18.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/feedback.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="54.0" layoutY="49.0" text="Review">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="379.0" fitWidth="352.0" layoutX="191.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Binty_Project_Image/restaurant-financials-excel-1280x750.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="364.0" fitWidth="219.0" layoutX="559.0" layoutY="185.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Binty_Project_Image/17273587_5796083.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="164.0" fitWidth="310.0" layoutX="201.0" layoutY="421.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Binty_Project_Image/original-ecebac0bcb5c72c5f34efb73a6dff3cd%20(1).jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

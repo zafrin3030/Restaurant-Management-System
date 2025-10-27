@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #2c2c4b;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.rms.controllers.OrderListController">
+   <children>
+      <AnchorPane layoutX="-14.0" layoutY="-8.0" prefHeight="255.0" prefWidth="821.0" style="-fx-background-color: #4a4a7a;">
+         <children>
+            <Button layoutX="21.0" layoutY="74.0" mnemonicParsing="false" onAction="#goToAdminDashboard" prefHeight="30.0" prefWidth="192.0" style="-fx-background-color: #ffffff; -fx-background-radius: 60; -fx-border-radius: 60; -fx-border-color: #00000;" text="        Orders">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <AnchorPane layoutX="16.0" layoutY="17.0" prefHeight="600.0" prefWidth="35.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <TableView fx:id="orderTable" layoutX="71.0" layoutY="130.0" prefHeight="438.0" prefWidth="682.0" style="-fx-border-color: #000000;">
+         <columns>
+            <TableColumn fx:id="idCol" prefWidth="78.0" style="-fx-border-color: #000000;" text="Order_ID" />
+            <TableColumn fx:id="customerIdCol" prefWidth="134.0" style="-fx-border-color: #000000;" text="Customer_ID" />
+            <TableColumn fx:id="foodNameCol" prefWidth="119.0" style="-fx-border-color: #000000;" text="Food_Name" />
+            <TableColumn fx:id="quantityCol" prefWidth="87.0" style="-fx-border-color: #000000;" text="Quantity" />
+            <TableColumn fx:id="paymentCol" prefWidth="121.0" style="-fx-border-color: #000000;" text="Payment_Method" />
+            <TableColumn fx:id="noteCol" prefWidth="140.0" style="-fx-border-color: #000000;" text="Special_Note/Regular" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

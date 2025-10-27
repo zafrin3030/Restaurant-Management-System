@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fffff0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.rms.controllers.EmployeeAssignController">
+   <children>
+      <AnchorPane layoutY="3.0" prefHeight="80.0" prefWidth="800.0" style="-fx-background-color: #e6e6fa;" AnchorPane.topAnchor="0.0" />
+      <AnchorPane layoutX="93.0" layoutY="53.0" prefHeight="507.0" prefWidth="659.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <AnchorPane layoutY="-26.0" prefHeight="54.0" prefWidth="660.0" style="-fx-background-color: #e6e6fa; -fx-border-color: #000000;">
+               <children>
+                  <Button layoutX="38.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToAdminDashboard" prefHeight="31.0" prefWidth="121.0" style="-fx-background-radius: 60; -fx-border-radius: 60; -fx-background-color: #e6e6fa;" text=" Employees">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="31.0" fitWidth="38.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Binty_Project_Image/e.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="employeeTable" layoutX="1.0" layoutY="26.0" prefHeight="483.0" prefWidth="659.0" style="-fx-border-color: #000000;">
+              <columns>
+                <TableColumn fx:id="nameCol" prefWidth="123.0" text="Name" />
+                <TableColumn fx:id="positionCol" prefWidth="116.0" text="Position" />
+                  <TableColumn fx:id="addressCol" prefWidth="150.0" text="Address" />
+                  <TableColumn fx:id="phoneCol" prefWidth="157.0" text="Phone Number" />
+                  <TableColumn fx:id="salaryCol" prefWidth="112.0" text="Salary" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="10.0" layoutY="190.0" mnemonicParsing="false" onAction="#editEvent" prefHeight="19.0" prefWidth="70.0" style="-fx-background-color: #e6e6fa; -fx-background-radius: 60; -fx-border-radius: 60;" text="Edit">
+         <font>
+            <Font name="System Bold Italic" size="9.0" />
+         </font>
+      </Button>
+      <Button layoutX="10.0" layoutY="228.0" mnemonicParsing="false" onAction="#deleteEvent" prefHeight="21.0" prefWidth="70.0" style="-fx-background-color: #e6e6fa; -fx-background-radius: 60; -fx-border-radius: 60;" text="Delete">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Button>
+      <Button layoutX="10.0" layoutY="146.0" mnemonicParsing="false" onAction="#newEmployeeAssignEvent" prefHeight="31.0" prefWidth="70.0" style="-fx-background-color: #e6e6fa; -fx-background-radius: 60; -fx-border-radius: 60;" text="Add  Employee">
+         <font>
+            <Font name="System Bold Italic" size="8.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

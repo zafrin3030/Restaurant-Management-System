@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-border-color: #000000; -fx-background-color: #2c2c4b;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.rms.controllers.CustomerDashboardController">
+   <children>
+      <AnchorPane layoutX="45.0" layoutY="38.0" prefHeight="536.0" prefWidth="681.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <AnchorPane prefHeight="536.0" prefWidth="80.0" style="-fx-background-color: #4a4a7a;">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="50.0" layoutX="17.0" layoutY="26.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../Binty_Project_Image/owner.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fill="WHITE" layoutX="42.0" layoutY="172.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+                  <ImageView fitHeight="33.0" fitWidth="34.0" layoutX="32.0" layoutY="156.0" onMouseClicked="#goToFoodOrder" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../Binty_Project_Image/order-food.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fill="WHITE" layoutX="40.0" layoutY="243.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+                  <ImageView fitHeight="33.0" fitWidth="34.0" layoutX="23.0" layoutY="227.0" onMouseClicked="#goToOrderHistory" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../Binty_Project_Image/shopping-list.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fill="WHITE" layoutX="38.0" layoutY="388.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="38.0" layoutY="315.0" radius="28.0" stroke="BLACK" strokeType="INSIDE" />
+                  <ImageView fitHeight="33.0" fitWidth="34.0" layoutX="21.0" layoutY="299.0" onMouseClicked="#goToEditProfile" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../Binty_Project_Image/settings.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="34.0" layoutX="21.0" layoutY="372.0" onMouseClicked="#goToLoginEvent" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../Binty_Project_Image/exit.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="fullnameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="291.0" layoutY="78.0" prefHeight="40.0" prefWidth="189.0" style="-fx-effect: dropshadow(gaussian, #ffcc00, 20, 0.3, 0, 0);" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="230.0" fitWidth="293.0" layoutX="388.0" layoutY="190.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/original-ecebac0bcb5c72c5f34efb73a6dff3cd%20(1).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="189.0" layoutX="115.0" layoutY="232.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/8511899_3896166.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="103.0" layoutY="170.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/pizza-delivery.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="240.0" layoutY="170.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/soft-drink.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="309.0" layoutY="170.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/pre-prepared-meals.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="169.0" layoutY="170.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/gelato.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="109.0" layoutY="125.0" prefHeight="27.0" prefWidth="149.0" text="Food Category">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="83.0" fitWidth="134.0" layoutX="117.0" layoutY="398.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/v910-aew-001.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="83.0" fitWidth="80.0" layoutX="280.0" layoutY="410.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/chart.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="631.0" layoutX="79.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/miami-bayside-landscape.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="14.0" prefHeight="40.0" prefWidth="452.0" text="Welcome to, The Hills Drop " textAlignment="CENTER" textFill="#fff7f7">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

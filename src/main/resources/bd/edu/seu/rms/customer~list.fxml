@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.rms.controllers.CustomerListController">
+   <children>
+      <AnchorPane layoutX="739.0" prefHeight="600.0" prefWidth="61.0" style="-fx-background-color: #4a4a7a;">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="38.0" layoutX="14.0" layoutY="20.0" onMouseClicked="#goToAdminDashboard" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/e.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="customerListTable" layoutX="26.0" layoutY="95.0" prefHeight="475.0" prefWidth="695.0" style="-fx-border-color: #000000; -fx-background-color: #dcdcdc;">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="49.0" style="-fx-border-color: #000000; -fx-background-color: #dcdcdc;" text="ID" />
+          <TableColumn fx:id="fullNameCol" prefWidth="149.0" style="-fx-border-color: #000000; -fx-background-color: #dcdcdc;" text="Full_name" />
+            <TableColumn fx:id="usernameCol" prefWidth="98.0" style="-fx-border-color: #000000; -fx-background-color: #dcdcdc;" text="username" />
+            <TableColumn fx:id="phoneCol" prefWidth="128.0" style="-fx-border-color: #000000; -fx-background-color: #dcdcdc;" text="Phone Number" />
+            <TableColumn fx:id="addressCol" prefWidth="194.0" style="-fx-border-color: #000000; -fx-background-color: #dcdcdc;" text="Address" />
+            <TableColumn fx:id="genderCol" prefWidth="74.0" style="-fx-border-color: #000000; -fx-background-color: #dcdcdc;" text="Gender" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchField" layoutX="136.0" layoutY="46.0" onKeyPressed="#searchKeyValue" prefHeight="25.0" prefWidth="441.0" promptText="Search here" style="-fx-border-radius: 60; -fx-border-color: #000000; -fx-background-radius: 60;" />
+   </children>
+</AnchorPane>

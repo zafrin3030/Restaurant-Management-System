@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.rms.controllers.CustomerReviewController">
+   <children>
+      <AnchorPane prefHeight="139.0" prefWidth="800.0" style="-fx-background-color: #e6e6fa;">
+         <children>
+            <ImageView fitHeight="144.0" fitWidth="800.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/14-Hills-Interior-12-GavriiLux--1024x683.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="112.0" onMouseClicked="#goToOrderHistory" prefHeight="32.0" prefWidth="225.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50;" text="Give Your Feedback" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="71.0" layoutY="199.0" prefHeight="349.0" prefWidth="251.0" style="-fx-background-color: #ffffff; -fx-effect: dropshadow(gaussian, #ffcc00, 20, 0.3, 0, 0); -fx-background-radius: 10;">
+         <children>
+            <Circle fill="WHITE" layoutX="117.0" layoutY="46.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="100.0" layoutY="32.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/girl.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="nameField" editable="false" layoutX="25.0" layoutY="96.0" prefHeight="33.0" prefWidth="193.0" promptText="Name" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="reviewArea" layoutX="26.0" layoutY="150.0" prefHeight="77.0" prefWidth="193.0" promptText="Write your review here..." style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextArea>
+            <ComboBox fx:id="reviewStar" layoutX="25.0" layoutY="251.0" prefHeight="25.0" prefWidth="71.0" promptText="Point" style="-fx-background-color: #deb887;" />
+            <Button layoutX="43.0" layoutY="303.0" mnemonicParsing="false" onAction="#submitEvent" prefHeight="32.0" prefWidth="149.0" style="-fx-background-color: #deb887;" text="Submit  Review">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="194.0" layoutY="250.0" onMouseClicked="#deleteEvent" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../Binty_Project_Image/delete.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="reviewTable" layoutX="400.0" layoutY="227.0" prefHeight="273.0" prefWidth="368.0" style="-fx-border-color: #ffffff; -fx-background-color: #deb887;">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="96.0" style="-fx-background-color: #deb887; -fx-border-color: #ffffff;" />
+          <TableColumn fx:id="reviewCol" prefWidth="197.0" style="-fx-background-color: #deb887; -fx-border-color: #ffffff;" />
+            <TableColumn fx:id="starCol" prefWidth="74.0" style="-fx-background-color: #deb887; -fx-border-color: #ffffff;" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="162.0" prefHeight="19.0" prefWidth="262.0" text="&quot;Your Happiness is our success&quot;" textAlignment="CENTER">
+         <font>
+            <Font name="Algerian" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
